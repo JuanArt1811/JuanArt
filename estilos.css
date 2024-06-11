@@ -193,6 +193,7 @@ header{
     justify-content: center;
     align-items: center;
     border: 3px solid #242526;
+    color: #242526;
 }
 .img-port img{
     width: 100%;
