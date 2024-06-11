@@ -207,6 +207,7 @@ header{
 .img-port a{
     text-decoration: none;
     list-style: none;
+    color: #242526;
 }
 .img-port a:visited{
     text-decoration: none;
