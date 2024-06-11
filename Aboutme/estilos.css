@@ -1,0 +1,547 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:"Montserrat";
+}
+
+/*----------------NAV-BAR--------------*/
+.nav-bar {
+    position: sticky;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: "Montserrat";
+    padding: 0 5%;
+    height: 100px;
+    background-color: #242526;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.logo img{
+    margin-right: 30px;
+    border: 1px solid #fff;
+}
+
+.nav-items {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    overflow: hidden; 
+}
+.nav-item {
+    list-style: none;
+}
+.nav_item-link {
+    display: block;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_item-link:hover {
+    border-bottom: 4px solid #675bf9;
+}
+
+.vertical-menu {
+    position: absolute;
+    display: none;
+    list-style: none; 
+    width: 150px;
+    background-color: #242526;
+    padding: 5px 0;
+}
+.vertical-item{
+    margin: 5px 0;
+}
+.nav-item:hover .vertical-menu {
+    display: block;
+}
+.vertical-item:hover {
+    border-bottom: 4px solid #675bf9;
+}
+.sub-item-link {
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+#toggle {
+    position: absolute;
+    top: -100px;
+}
+
+.icon-bars {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+/*------------ABOUT ME----------------*/
+.aboutme-container{
+    width: 100%;
+    height: 100%;
+}
+.aboutme-tittle{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #675bf9;
+}
+.aboutme-tittle h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.perfil-wrapper{
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    border: 3px solid #242526;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 0 #242526;
+    object-fit: cover;
+}
+
+
+.perfil-tittle h3{
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.perfil-tittle h4{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-bottom: 5px solid #675bf9;
+    margin-bottom: 25px;
+}
+
+.perfil-info{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.experience{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.perfil-info p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.cv_input-container{
+    margin: 15px;
+}
+.cv_input-container input[type="submit"]{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: 300px;
+    background-color: #242526;
+    color: #fff;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+.cv_input-container input[type="submit"]:hover{
+    background-color: #675bf9;
+}
+.profile_skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+}
+.skills-container{
+    box-shadow: 0 0 9px 0 #242526;
+    margin-top: 70px;
+    padding: 40px;
+    background-color: #242526;
+
+    view-timeline-name: --anim;
+    view-timeline-axis: block;
+
+    animation-timeline: --anim;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30% ;
+    animation-fill-mode: both;
+}
+
+.profile_skills-container h3{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 5px solid #675bf9;
+}
+
+.profile_skill{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 600px;
+    align-items: center;
+    margin-left: 0;
+}
+.load-bar{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    padding: 5px;
+    font-size: 12px;
+    width: 900px;
+    margin: 4px;   
+    margin-left: 0;
+}
+
+.profile_skill-name{
+    color: #675bf9;
+    font-size: 20px;
+    margin: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.load-bar_bar{
+    background-color: #675bf9;
+    border-radius: 4px;
+    padding: 4p 6px;
+}
+
+.bar--80{
+    width: 80%;
+}
+.bar--85{
+    width: 85%;
+}
+.bar--90{
+    width: 90%;
+}
+.bar--70{
+    width: 70%;
+}
+.bar--60{
+    width: 60%;
+}
+.bar--65{
+    width: 65%;
+}
+.bar--100{
+    width: 100%;
+}
+
+.skills-logos-container{
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #685bf96b;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border: 5px solid #fff;
+}
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    grid-template-rows: repeat(3, auto); /* 3 filas */
+    gap: 5px; /* Espacio entre los elementos */
+}
+
+.skill-logo img {
+    width: 100%;
+    height: 60px; /* Altura fija para uniformidad */
+    object-fit: contain; /* Ajuste proporcional */
+    display: flex;
+}
+.skills-tittle{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fff;
+}
+.skill-logo h3{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+    color: #fff;
+}
+
+/*----------CONTACT ME----------*/
+
+.contact-container{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+
+    view-timeline-name: --anim;
+    view-timeline-axis: block;
+
+    animation-timeline: --anim;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30% ;
+    animation-fill-mode: both;
+}
+.form-tittle-container{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom: 5px solid #675bf9;
+}
+.form_tittle{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.contactos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border: 3px solid #242526;
+}
+
+.form_imput-container{
+    margin: 10px;
+}
+
+.form_imput-container :is(input,textarea){
+    width: 100%;
+    padding:9px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 0px 0px 9px #0003;
+    background-color: #fffd;
+}
+.form_imput-container textarea{
+    resize: none;
+    height: 150px;
+    font-family: "Montserrat";
+}
+.form_imput-container input[type="submit"]{
+    padding: 12px;
+    background-color: #242526;
+    color: #fff;
+    font-family: "Montserrat";
+    cursor: pointer;
+}
+.form_imput-container input[type="submit"]:hover{
+    background-color: #675bf9;
+}
+
+.redes-tittle{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-info{
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border: 3px solid #242526;
+}
+
+.redes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.red-social{
+    max-width: 100px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.red-social img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.redes-img{
+    margin: auto;
+    overflow: hidden;
+    max-width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 9px 0 #242526;
+}
+.redes-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+/*----------FOOTER------------*/
+
+.footer-container{
+    padding: 60px;
+    text-align: center;
+    background-color: #242526;
+    color: #fffd;
+    font-size: 19px;
+    margin-top: 40px;
+}
+@media (max-width: 1200px) {
+    .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    .nav-items {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0,0,0,0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+        
+    }   
+
+    .nav-bar :checked~ .nav-items {
+        bottom: 0;
+    }
+    .icon-bars {
+        display: block;
+    }
+
+    .vertical-menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent; 
+    }
+
+    .load-bar{
+        width: 600px;
+    }
+    .skills-logos-container{
+        flex-direction: column;
+    }
+
+    .skills-grid-container{
+        grid-template-columns: repeat(3, 1fr); /* 6 columnas */
+        grid-template-rows: repeat(6, auto);
+    }
+
+    .contactos-container{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 600px){
+    .load-bar{
+        width: 80%;
+    }
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}

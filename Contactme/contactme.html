@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME || JUANART</title>
+    <link rel="shortcut icon" href="../icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <nav class="nav-bar">
+        <input type="checkbox" id="toggle">
+        <div class="logo">
+            <img src="../icono.png" alt="">
+            JUANART           
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item"><a href="../index.html" class="nav_item-link">Home</a></li>
+            <li class="nav-item" ><a href="../Aboutme/aboutme.html" class="nav_item-link">About me</a></li>
+            <li class="nav-item"><a href="#" class="nav_item-link">Web Development</a></li>
+            <li class="nav-item">
+                <div class="nav_item-link">Digital Art</div>
+                <ul class="vertical-menu">
+                    <li class="vertical-item"><a href="../Illustrations/illustrations.html" class="sub-item-link">Illustrations</a></li>
+                    <li class="vertical-item"><a href="../Modeling/modeling.html" class="sub-item-link">Modeling</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <div class="nav_item-link">Animation</div>
+                <ul class="vertical-menu">
+                    <li class="vertical-item"><a href="../3Danimation/3Danimation.html" class="sub-item-link">3D Animation</a></li>
+                    <li class="vertical-item"><a href="../2Danimation/2Danimation.html" class="sub-item-link">2D Animation</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="../Rigging/Rigging.html" class="nav_item-link">Rigging</a></li>
+            <li class="nav-item"><a href="../Contactme/contactme.html" class="nav_item-link">Contact me</a></li>
+        </ul>
+        <label for="toggle" class="icon-bars">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <section class="form" id="contact">
+        <div class="contact-container">
+            <div class="form-tittle-container">
+                <h2 class="form_tittle">CONTACT ME</h2>
+            </div>
+            <div class="contactos-container">
+                <div class="form-container">
+                    <form class="form_form" action="https://formspree.io/f/xyyrqlbp" method="post">
+                        <div class="form_imput-container">
+                            <label>Name
+                                <input type="text" name="nombre" placeholder="Your name">
+                            </label>
+                        </div>
+                        <div class="form_imput-container">
+                            <label>Subject
+                                <input type="text" name="asunto" placeholder="Job offer">
+                            </label>
+                        </div>
+                        <div class="form_imput-container">
+                            <label>Email
+                                <input type="email" name="correo" placeholder="Yourmail@example.com">
+                            </label>
+                        </div>
+                        <div class="form_imput-container">
+                            <label>Message
+                                <textarea name="mensaje" placeholder="Your message"></textarea>
+                            </label>
+                        </div>
+                        <div class="form_imput-container">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="redes-tittle-container">
+                        <h3 class="redes-tittle">My social Network</h3>
+                    </div>         
+                    <div class="redes-img">
+                        <img src="../Redes/Foto.jpeg" alt="">
+                    </div>
+                    <div class="redes-container">
+                        <a href="https://www.instagram.com/hoowwg_/" target="_blank">
+                            <div class="red-social"><img src="../Redes/Instagram.png" alt=""></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/juan-esteban-alzate-quintero-142877274/" target="_blank">
+                            <div class="red-social"><img src="../Redes/Linkedin.png" alt=""></div>
+                        </a>
+                        <a href="mailto:juanesaq8@gmail.com">
+                            <div class="red-social"><img src="../Redes/Email.png" alt=""></div>
+                        </a>                          
+                    </div>         
+                </div>               
+            </div>           
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <p class="footer-message">&copy; 2024 Juan Esteban Alzate (JuanArt).<strong>All rights reserved.</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
