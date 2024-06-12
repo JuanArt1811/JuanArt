@@ -140,7 +140,6 @@ body{
     margin: auto;
     gap: 40px;
     padding: 40px 0;
-    overflow: hidden;
 }
 .animation-item video{
     width: 100%;
@@ -203,8 +202,8 @@ body{
     }
 
 
-    .galeria-models{
-        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    .galeria-fight-animations{
+        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
         gap: 20px;
     }
 
@@ -213,6 +212,13 @@ body{
     }
     .close{
         top: 150px;
+    }
+
+    .video{
+        width: 90%;
+    }
+    .animations-tittle h2{
+        font-size: 40px;
     }
 }
 

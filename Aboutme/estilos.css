@@ -523,6 +523,7 @@ body{
         grid-template-rows: repeat(6, auto);
     }
 
+
     .contactos-container{
         flex-direction: column;
     }
@@ -532,6 +533,12 @@ body{
 @media (max-width: 600px){
     .load-bar{
         width: 80%;
+    }
+    .skill-logo img{
+        height: 40px;
+    }
+    .skill-logo h3{
+        font-size: 12px;
     }
 }
 

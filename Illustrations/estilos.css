@@ -305,4 +305,8 @@ body{
     .close{
         top: 150px;
     }
+
+    .illustration-tittle h2{
+        font-size: 35px;
+    }
 }
