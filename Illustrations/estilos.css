@@ -136,10 +136,8 @@ body{
     padding: 40px 0;
     overflow: hidden;
 }
-.illustration-item img{
+.illustration-item iframe{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     box-shadow: 0 0 6px rgba(0,0,0,0.8);
     transition: transform 0.2s;
 }
@@ -199,7 +197,7 @@ body{
     overflow: hidden;
 }
 
-.galeria-illustrations a:hover img{
+.galeria-illustrations a:hover iframe{
     transform: scale(1.05);
 }
 .iconos{
@@ -271,10 +269,8 @@ body{
     padding: 40px 0;
     overflow: hidden;
 }
-.more-item img{
+.more-item iframe{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     box-shadow: 0 0 6px rgba(0,0,0,0.8);
     transition: transform 0.2s;
 }
@@ -390,6 +386,9 @@ body{
     .galeria-illustrations{
         grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
         gap: 20px;
+    }
+    .galeria-illustrations iframe{
+        height: 100%;
     }
 
     .iconos{
