@@ -138,8 +138,7 @@ body{
 }
 .galeria-text-animations{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(1fr, minmax(250px,1fr));
     width: 95%;
     margin: auto;
     gap: 40px;
